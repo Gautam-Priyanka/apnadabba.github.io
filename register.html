@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>ApnaDabba-Food Delivery</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets\img\favicons\favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets\img\favicons\favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets\img\favicons\favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets\img\favicons\favicon.png">
+    <link rel="manifest" href="assets\img\favicons\manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="assets\lib\loaders.css\loaders.min.css" rel="stylesheet">
+    <link href="assets\css\theme.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <!-- ============================================-->
+      <!-- Preloader ==================================-->
+      <div class="preloader p-0" id="preloader">
+        <div class="loader d-flex flex-column align-items-center"><img src="assets\img\illustrations\egg.gif" alt=""></div>
+      </div><!-- ============================================-->
+      <!-- End of Preloader ===========================--><a class="bottom-to-top rounded-soft" href="#top" data-fancyscroll=""><span class="fas fa-angle-up lg" data-fa-transform="down-2"></span></a>
+      <!--+navbar.navbar-expand-md.navbar-dark.bg-dark.sticky-top.font-weight-semi-bold.fs--1-->
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container"><a class="navbar-brand" href="index.html"><img class="pb-1" src="assets\img\logo.png" alt="logo"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+             <li class="nav-item"><a class="nav-link pr-4" href="index.html" data-fancyscroll="data-fancyscroll">Home</a></li>
+              <li class="nav-item dropdown dropdown-menu-on-hover pr-4"><a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="about.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                <div class="dropdown-menu bg-black border-0 py-3" aria-labelledby="navbarDropdownPages"><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a><a class="dropdown-item" href="terms-and-condition.html">Terms &amp; Conditions</a><a class="dropdown-item border-bottom-0" href="offers">Offers</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link pr-4" href="gallery.html" data-fancyscroll="data-fancyscroll">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link pr-4" href="contact.html" data-fancyscroll="data-fancyscroll">Contact</a></li>
+              <li class="nav-item"><a class="nav-link pr-4" href="login.html" data-fancyscroll="data-fancyscroll">Login</a></li>
+              <li class="nav-item"><a class="nav-link pr-4" href="register.html" data-fancyscroll="data-fancyscroll">Register</a></li>
+             
+             
+             
+            </ul>
+            <ul class="navbar-nav ml-auto my-3 my-lg-0">
+              <li class="nav-item"><button class="btn btn-outline-primary" type="button" data-toggle="modal" data-target="#reservation"><span class="d-none d-xl-inline">Share & </span>Earn</button></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="modal fade" id="reservation" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content border-0">
+            <div class="bg-holder rounded-soft" style="background-image:url(assets/img/food/pngfind.png);background-size:40%;background-position:top right; transform:none;"></div>
+            <!--/.bg-holder-->
+              <form class="zform modal-body pb-0"><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="row">
+                <div class="border border-primary border-2x ml-5 rounded-soft"></div>
+                <div class="col-8">
+                  <h5 class="font-weight-bold mt-2">Register To<br> Earn Money</h5>
+                </div>
+              </div>
+              <div class="row mt-4 ml-3 form-group">
+                <div class="col-lg-6 mb-3 mb-lg-0">
+                  <input class="form-control" type="text" placeholder="Name" required>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-with-icon"><input class="form-control icon-input" type="date" placeholder="DD/MM/YYYY" aria-label="date" required><span class="position-absolute fas fa-calendar-day text-400 icon"></span></div>
+                </div>
+              </div>
+              <div class="row form-group ml-3">
+                <div class="col-lg-6 mb-3 mb-lg-0"><input class="form-control" type="text" placeholder="Address" required></div>
+                <div class="col-lg-6"><input class="form-control" type="tel" placeholder="Phone" required></div>
+              </div>
+              <div class="row form-group ml-3">
+                  <div class="col-lg-6 mb-3 mb-lg-0"><input class="form-control" type="text" placeholder="Bank Name" required></div>
+                  <div class="col-lg-6 mb-3 mb-lg-0"><input class="form-control" type="text" placeholder="Bank Account No" required></div>
+              </div>
+			  <div class="row form-group ml-3">
+                  <div class="col-lg-6 mb-3 mb-lg-0"><input class="form-control" type="text" placeholder="Bank IFSC" required></div>
+                  <div class="col-lg-6 mb-3 mb-lg-0"><input class="form-control" type="text" placeholder="Branch" required></div>
+              </div>
+             
+              <div class="row justify-content-center bg-primary rounded-bottom" style="margin-left:-17px;margin-right:-17px;margin-bottom:-1px">
+                <div class="col-10 pt-3 pb-4">
+                  <p class="text-900">A Healthy Lunch will boost your Power and gives you the energy to work hard and more enthusiasm.</p><input class="btn btn-light btn-block text-center mt-2" type="submit" value="Submit">
+                </div>
+              </div>
+              <div class="zform-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+   
+   <!--contact ...............................................-->
+ <section class="contact pt-100 pb-100" id="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6 mx-auto text-center">
+                  <div class="section-title mb-100">
+                     <p>Welcome back</p>
+                     <h4>Ordering food online has never been this easy</h4>
+                  </div>
+               </div>
+            </div>
+            <div class="row text-center">
+                  <div class="col-md-12">
+                     <form action="#" class="contact-form">
+                        <div class="row">
+
+                           <div class="col-xl-6">
+						     
+							  <h3 class="cooking-heading">Cooking gone wrong?</h3>
+							   <p>Our main concept is to provide you what you want. We are providing menu list to customers and they can freely choose any food items on any day according to calendar.</p>
+                              <input type="text" placeholder="User Name*" required>
+                              <input type="text" placeholder="Email*" required>
+                              <input type="number" placeholder="Mobile No*" required>
+                              <input type="text" placeholder="Address*" required>
+							  <input type="password" placeholder="Password*" required>
+							  <input type="password" placeholder="Confirm Password*" required>
+							  <input type="submit" value="Submit">
+                           
+			    	    	 <span class="forget-password">Alredy have an account? <a href="#" class="register-login">Login</a></span>
+			    	    	
+							    
+                           </div>
+                           <div class="col-xl-6">
+								<img src="assets\img\register-right-img.png" alt="" />
+                           </div>
+
+
+                        </div>
+                     </form>
+                  </div>
+                 
+            </div>
+         </div>
+      </section>
+
+
+      <!-- ============================================-->
+          <!-- <section> begin ============================-->
+      <section class="bg-dark py-0" data-zanim-timeline='{"delay":0}' data-zanim-trigger="scroll">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-auto d-none d-md-block mt-6 align-self-end"><img src="assets\img\food\pngfood2.png" alt="" width="95" data-zanim-xs='{"delay":0,"duration":2}'></div>
+            <div class="col-md col-lg-11 col-xl-9 my-6">
+              <div class="row">
+                <div class="col-md-5 col-lg-4 mb-6 mb-md-0 align-self-center"><img class="mb-1" src="assets\img\logo.png" alt="">
+                  <p class="text-white my-3 fs-1 mb-4">Launched on 27th September 2019, APNADABBA SERVICES is mainly in Azad nagar, balaganj, 
+				  lucknow (Utter Pradesh). We mainly focus on THALI online delivery services to door step, that make customers like bachelors, 
+				  students, officials, feel like home.</p>
+				  <p class="text-danger font-weight-bold">Follow us on</p>
+				   <a class="text-600 text-decoration-none mr-4" href="https://www.facebook.com/yourfoodyourdesire/"><span class="fab fa-facebook-f"></span></a>
+				   <a class="text-600 text-decoration-none mr-4" href="#!"><span class="fab fa-twitter"></span></a>
+				   <a class="text-600 text-decoration-none mr-4" href="#!"><span class="fab fa-pinterest"></span></a>
+				   <a class="text-600 text-decoration-none mr-4" href="#!"><span class="fab fa-vimeo"></span></a>
+				   <a class="text-600 text-decoration-none mr-4" href="#!"><span class="fab fa-behance"></span></a>
+				  
+                </div>
+                <div class="col-auto d-none d-lg-flex">
+                  <div class="border-left border-1000 my-5"></div>
+                </div>
+                <div class="col-6 col-md-4 ml-auto ml-lg-0">
+                   <h6 class="text-base fs-0 mb-4 font-weight-bold text-uppercase text-white">Delivery Hours</h6>
+                  <ul class="nav flex-column">
+                  <p class="text-danger font-weight-bold">Breakfast - Sunday-Monday</p>
+                  <p class="text-600">09:00 AM - 11:00 AM</p>
+                  <p class="text-danger font-weight-bold">Lunch - Sunday-Monday</p>
+                  <p class="text-600">01:00 PM - 2:30 PM</p>
+				  <p class="text-danger font-weight-bold">Dinner - Sunday-Monday</p>
+				  <p class="text-600">07:00 PM - 09:00 PM</p>
+                  
+                  </ul>
+                </div>
+                <div class="col-auto d-none d-lg-flex">
+                  <div class="border-left border-1000 my-5"></div>
+                </div>
+                <div class="col-6 col-md-3">
+                
+				   <h6 class="text-base fs-0 mb-4 font-weight-bold text-uppercase text-white">Contact us</h6>
+                  <ul class="nav flex-column">
+                    <li class="mb-2"><a class="text-600 text-decoration-none active" href="#!">Near Baraura Hussain Bari Lucknow,Uttar<br>Pradesh-226003</a></li>
+                    <li class="mb-2"><a class="text-600 text-decoration-none" href="#!">delivery@apnadabba<br>services.com</a></li>
+                    <li class="mb-2"><a class="text-600 text-decoration-none" href="#!">+917007441934</a></li>
+                   <p class="text-danger font-weight-bold">Online Payments by</p>
+				     
+                   <p> <img src="assets\img\pay_1.png" alt="" />
+				<img src="assets\img\pay_2.png" alt="" /> <img src="assets\img\pay_3.png" alt="" /></p>
+				 
+				  
+				  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="bg-black py-4 text-center">
+        <div class="container">
+          <p class="mb-0 font-weight-bold d-inline-block">Copyright © 2020 ApnaDabba<span class="text-primary fs-0">&nbsp;&hearts;</span> </p><a class="text-white ml-2" href="https://themewagon.com/">All rights reserved</a>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+    </main><!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="assets\js\jquery.min.js"></script>
+    <script src="assets\js\popper.min.js"></script>
+    <script src="assets\js\bootstrap.js"></script>
+    <script src="assets\js\plugins.js"></script>
+    <script src="assets\lib\is\is.min.js"></script>
+    <script src="assets\lib\stickyfilljs\stickyfill.min.js"></script>
+    <script src="assets\lib\sticky-kit\sticky-kit.min.js"></script>
+    <script src="assets\lib\loaders.css\loaders.css.js"></script><!-- Global site tag (gtag.js) - Google Analytics-->
+    <script src="assets\lib\fancybox\jquery.fancybox.min.js"></script>
+    <script src="assets\lib\owl-carousel\owl.carousel.min.js"></script>
+    <script src="assets\lib\fancy-tab\fancy-tab.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARdVcREeBK44lIWnv5-iPijKqvlSAVwbw&callback=initMap" async=""></script>
+    <script src="assets\lib\flexslider\jquery.flexslider-min.js"></script>
+    <script src="assets\js\theme.js"></script>
+	 <script src="assets\js\gallery.js"></script>
+  </body>
+
+</html>

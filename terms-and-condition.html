@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>ApnaDabba-Food Delivery</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+     <link rel="apple-touch-icon" sizes="180x180" href="assets\img\favicons\favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets\img\favicons\favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets\img\favicons\favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets\img\favicons\favicon.png">
+    <link rel="manifest" href="assets\img\favicons\manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="assets\lib\loaders.css\loaders.min.css" rel="stylesheet">
+    <link href="assets\lib\fancybox\jquery.fancybox.min.css" rel="stylesheet">
+    <link href="assets\css\theme.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <!-- ============================================-->
+      <!-- Preloader ==================================-->
+      <div class="preloader p-0" id="preloader">
+        <div class="loader d-flex flex-column align-items-center"><img src="assets\img\illustrations\egg.gif" alt=""></div>
+      </div><!-- ============================================-->
+      <!-- End of Preloader ===========================--><a class="bottom-to-top rounded-soft" href="#top" data-fancyscroll=""><span class="fas fa-angle-up lg" data-fa-transform="down-2"></span></a>
+      <!--+navbar.navbar-expand-md.navbar-dark.bg-dark.sticky-top.font-weight-semi-bold.fs--1-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container"><a class="navbar-brand" href="index.html"><img class="pb-1" src="assets\img\logo.png" alt="logo"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+             <li class="nav-item"><a class="nav-link pr-4" href="index.html" data-fancyscroll="data-fancyscroll">Home</a></li>
+              <li class="nav-item dropdown dropdown-menu-on-hover pr-4"><a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="about.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                <div class="dropdown-menu bg-black border-0 py-3" aria-labelledby="navbarDropdownPages"><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a><a class="dropdown-item" href="terms-and-condition.html">Terms &amp; Conditions</a><a class="dropdown-item border-bottom-0" href="offers">Offers</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link pr-4" href="gallery.html" data-fancyscroll="data-fancyscroll">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link pr-4" href="contact.html" data-fancyscroll="data-fancyscroll">Contact</a></li>
+              <li class="nav-item"><a class="nav-link pr-4" href="login.html" data-fancyscroll="data-fancyscroll">Login</a></li>
+              <li class="nav-item"><a class="nav-link pr-4" href="register.html" data-fancyscroll="data-fancyscroll">Register</a></li>
+             
+             
+             
+            </ul>
+            <ul class="navbar-nav ml-auto my-3 my-lg-0">
+              <li class="nav-item"><button class="btn btn-outline-primary" type="button" data-toggle="modal" data-target="#reservation"><span class="d-none d-xl-inline">Share & </span>Earn</button></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+       <div class="modal fade" id="reservation" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content border-0">
+            <div class="bg-holder rounded-soft" style="background-image:url(assets/img/food/pngfind.png);background-size:40%;background-position:top right; transform:none;"></div>
+            <!--/.bg-holder-->
+              <form class="zform modal-body pb-0"><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <div class="row">
+                <div class="border border-primary border-2x ml-5 rounded-soft"></div>
+                <div class="col-8">
+                  <h5 class="font-weight-bold mt-2">Register To<br> Earn Money</h5>
+                </div>
+              </div>
+              <div class="row mt-4 ml-3 form-group">
+                <div class="col-lg-6 mb-3 mb-lg-0">
+                  <input class="form-control" type="text" placeholder="Name" required>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-with-icon"><input class="form-control icon-input" type="date" placeholder="DD/MM/YYYY" aria-label="date" required><span class="position-absolute fas fa-calendar-day text-400 icon"></span></div>
+                </div>
+              </div>
+              <div class="row form-group ml-3">
+                <div class="col-lg-6 mb-3 mb-lg-0"><input class="form-control" type="text" placeholder="Address" required></div>
+                <div class="col-lg-6"><input class="form-control" type="tel" placeholder="Phone" required></div>
+              </div>
+              <div class="row form-group ml-3">
+                  <div class="col-lg-6 mb-3 mb-lg-0"><input class="form-control" type="text" placeholder="Bank Name" required></div>
+                  <div class="col-lg-6 mb-3 mb-lg-0"><input class="form-control" type="text" placeholder="Bank Account No" required></div>
+              </div>
+			  <div class="row form-group ml-3">
+                  <div class="col-lg-6 mb-3 mb-lg-0"><input class="form-control" type="text" placeholder="Bank IFSC" required></div>
+                  <div class="col-lg-6 mb-3 mb-lg-0"><input class="form-control" type="text" placeholder="Branch" required></div>
+              </div>
+             
+              <div class="row justify-content-center bg-primary rounded-bottom" style="margin-left:-17px;margin-right:-17px;margin-bottom:-1px">
+                <div class="col-10 pt-3 pb-4">
+                  <p class="text-900">A Healthy Lunch will boost your Power and gives you the energy to work hard and more enthusiasm.</p><input class="btn btn-light btn-block text-center mt-2" type="submit" value="Submit">
+                </div>
+              </div>
+              <div class="zform-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-7 pb-4">
+        <div class="bg-holder" style="background-image:url(assets/img/gallery/fullpage-bg.jpg);"></div>
+        <!--/.bg-holder-->
+        <div class="container">
+          <div class="row min-vh-25 align-items-center text-center justify-content-center">
+            <div class="col col-md-7">
+              <h1 class="text-primary fs-2 fs-md-5">Terms & Conditions</h1>
+              <div class="lead text-white text-uppercase fs-0 fs-md-1">Take a look inside</div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="bg-light-privacy-policy">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Terms And Conditions</h3><br>
+					<p>Please read the terms and conditions ("Terms and Conditions") set out below carefully before ordering any Goods or Services from this
+					Website. By ordering any Goods or Services from this Website, by phone, or by our mobile applications you agree to be bound by these Terms 
+					and Conditions.</p>
+						<ul>
+							<li>
+								<h4>Section 1: Introduction</h4>
+								<p>We are apnadabba, a product of Apnadabba Services Pvt. Ltd. http://www.apnadabbaservices.com, unless otherwise stated.</p>
+							</li>
+							<li>
+								<h4>Section 2: Definitions</h4>
+								<h5>o 2.1.</h5>
+								<p>"Agreement" is a reference to these Terms and Conditions, the Privacy Policy, any order form and payment instructions provided to you;</p>
+								<h5>o 2.2.</h5>
+								<p>"Privacy Policy" means the policy displayed on our Website which details how we collect and store your personal data;<p>
+								<h5>o 2.3.</h5>
+								<p>"you" , "your" and "yours" are references to you the person accessing this Website and ordering any Goods or Services from the Website or from any other channel provided by apnadabba;<p>
+								<h5>o 2.4.</h5>
+								<p>"we" , "us" , "our" , and "apnadabba" are references to the Company;<p>
+								<h5>o 2.5.</h5>
+								<p>"Goods" is a reference to any goods which we may offer for sale from our Website from time to time;<p>
+								<h5>o 2.6.</h5>
+								<p>"Service" or "Services" is a reference to any service which we may supply and which you may request via our Website and Mobile Application;<p>
+								<h5>o 2.7.</h5>
+								<p>"Participating Kitchen" is a third party, which has agreed to co-operate with the Company to prepare and/or deliver the Goods or Services.<p>
+								<h5>o 2.8.</h5>
+								<p>"Food Delivery" is a reference to perishable goods and to any form of delivery service, which both are provided by our Participating Kitchens and for both of which our Participating Kitchens take full responsibility; and<p>
+								<h5>o 2.9.</h5>
+								<p>"Website" is a reference to our Website http://www.apnadabbaservices.com or our mobile applications on which we offer our Goods or Services.<p>
+								
+								
+							</li>
+								<li>
+								<h4>Section 3: Ordering</h4>
+								<h5>o 3.1.</h5>
+								<p>Any contract for the supply of Food Delivery from this Website is between you and the Participating Kitchen; for the supply 
+								of Goods or Services from this Website any contact is between you and apnadabba. You agree to take particular care when
+								providing us with your details and warrant that these details are accurate and complete at the time of ordering. You also 
+								warrant that the credit or debit card or wallet of Application details that you provide are for your own credit or debit card
+								or wallet of Application and that you have sufficient funds to make the payment.<p>
+								<h5>o 3.2.</h5>
+								<p>Food Delivery, Goods and Services purchased from this Website are intended for your use only and you warrant that any Goods
+								purchased by you are not for resale and that you are acting as principal only and not as agent for another party when receiving
+								the Services.<p>
+								<h5>o 3.3.</h5>
+								<p>Please note that some of our Goods may be suitable for certain age ranges only. You should check that the product you are ordering is 
+								suitable for the intended recipient.<p>
+								<h5>o 3.4.</h5>
+								<p>When ordering from this Website you may be required to provide an e-mail address and password. You must ensure that you keep the combination of these
+								details secure and do not provide this information to a third party.<p>
+								<h5>o 3.5.</h5>
+								<p>We will take all reasonable care, in so far as it is in our power to do so, to keep the details of your order and payment 
+								secure, but in the absence of negligence on our part we cannot be held liable for any loss you may suffer if a third party 
+								procures unauthorized access to any data you provide when accessing or ordering from the Website.<p>
+								<h5>o 3.6.</h5>
+								<p>Any order that you place with us is subject to product availability, delivery capacity and acceptance by us and the
+								Participating Kitchen. When you place your order online, we will send you an email to confirm that we have received it.
+								This email confirmation will be produced automatically so that you have confirmation of your order details. You must inform
+								us immediately if any details are incorrect. The fact that you receive an automatic confirmation does not necessarily mean 
+								that either we or the Participating Kitchen will be able to fill your order. Once we have sent the confirmation email we will 
+								check availability and delivery capacity.<p>
+								<h5>o 3.7.</h5>
+								<p>If the ordered Food Delivery and delivery capacity is available, the Participating Kitchen will accept the contract and confirm it to apnadabba. If the details of the order are correct, the contract for the Food Delivery, Goods or Services will be confirmed by text message (SMS).<p>
+								<h5>o 3.8.</h5>
+								<p>In the case that Goods offered by apnadabba were ordered, apnadabba will confirm availability together with or separately from Food Delivery.<p>
+								<h5>o 3.9.</h5>
+								<p>The confirmation message will specify delivery details including the approximate delivery time specified by the Participating Kitchen and confirm the price of the Food Delivery, Goods and Services ordered.<p>
+								<h5>o 3.10.</h5>
+								<p>If the Food Delivery and/or Goods are not available or if there is no delivery capacity, we will also let you know by text message (SMS) or phone call.<p>
+								
+							</li>
+							<li>
+								<h4>Section 4: Prices and Payment</h4>
+								<h5>o 4.1.</h5>
+								<p>Any contract for the supply of Food Delivery from this Website is between you and the Participating Kitchen; for the supply of Goods or Services from this Website any contact is between you and apnadabba. You agree to take particular care when providing us with your details and warrant that these details are accurate and complete at the time of ordering. You also warrant that the credit or debit card details and other mode of banking that you provide are for your own credit or debit card and that you have sufficient funds to make the payment.<p>
+								<h5>o 4.2.</h5>
+								<p>All prices listed on the Website are correct at the time of publication ,we give great care to keep them up to date.We also reserve the right to alter the Goods or Services available for sale on the Website<p>
+								<h5>o 4.3.</h5>
+								<p>All prices for delivery by apnadabba listed on the Website are correct at the time of publication, however, we reserve the right to alter these in the future<p>
+								<h5>o 4.4.</h5>
+								<p>The total price for Food Delivery, Goods or Services ordered, including delivery charges and other charges, will be displayed on the Website when you place your order. Full payment must be made for all Goods despatched and Services provided. Payment has to be made in cash or, if available on the website, by online payment, e.g. credit or debit card and other mode of payment available.<p>
+								<h5>o 4.5.</h5>
+								<p>If you choose online payment, you must pay for your order before it is delivered. To ensure that shopping online is secure, your debit/credit card details will be encrypted to prevent the possibility of someone being able to read them as they are sent over the internet. Your credit card company may also conduct security checks to confirm it is you placing the order.<p>
+								<h5>o 4.6.</h5>
+								<p>The prices reflected on the website/mobile application/email are determined solely by the apnadabba at the time of listing or afterwards.<p>
+								<h5>o 4.7.</h5>
+								<p>All applicable taxes and levies, the rates thereof and the manner of applicability of such taxes are being charged and determined by the Participating Kitchen and apnadabba is merely collecting the same on behalf of such Participating Kitchen.<p>
+							<h5> o 4.8.</h5>
+							<p>The entire amount of applicable taxes
+                        collected by apnadabbais directly remitted as it is to
+                        Participating Kitchens and apnadabba does not
+                        retain any amounts thereof</p>
+                    <h5> o 4.9.</h5> 
+					<p>Apnadabba is not responsible for validating
+                        the legal sanctity of the applicable taxes and the
+                        manner of its applicability on behalf of the
+                        Participating Kitchen. apnadabba holds no
+                        responsibility for the legal correctness/validity of the
+                        levy of such taxes. The sole responsibility for any
+                        legal issue arising on the taxes shall reside with the
+                        Participating Kitchen.</p>
+
+                    <h5> o 4.10.</h5> 
+					<p>The transaction of sale of food or food
+                        items is between Participating Kitchen and the
+                        customer, and accordingly, apnadabba is not liable
+                        to charge or deposit any taxes applicable on such
+                        transaction</p>
+                    <h5>o 4.11.</h5>
+					<p>The final tax invoice will be issued by the
+                    apnadabba and delivered to the customer email</p>
+					</li>
+					<li>
+								 <h4> Section 5: Delivery</h4>
+								 <h5>o 5.1.</h5> 
+								 <p>Delivery periods quoted at the time of
+                        ordering are approximate only and may vary. Goods
+                        will be delivered to the address designated by you
+                        at the time of ordering.</p>
+                    <h5>o 5.2.</h5> 
+					<p>If delivery is done by the Participating
+                        Kitchen, it is the Participating Kitchens sole
+                        responsibility to provide Food Delivery in a timely
+                        manner.</p>
+                    <h5> o 5.3.</h5> 
+					<p>In the case delivery is done by apnadabba,
+                        we will give great care to deliver in a timely manner.
+                        No responsibility is taken for late delivery by
+                        apnadabba in either case.</p>
+                    <h5>o 5.4.</h5>
+						<p>All orders are delivered by a reputable
+                        courier. We and the Participating Kitchen will make
+                        every effort to deliver within the time stated,
+                        however, we will not be liable for any loss caused to
+                        you by ordering late. If the Goods are not delivered
+                        within the estimated delivery time quoted by us,
+                        please contact the participating kitchen first. You
+                        may also contact us by telephone or email and we
+
+                        will try to ensure that you receive your order as
+                        quickly as possible.</p>
+                    <h5>o 5.5.</h5> 
+					<p>In case of a late delivery, the delivery
+                        charge will neither be voided nor refunded by
+                        apnadabba.</p>
+                    <h5>o 5.6.</h5>
+						<p>All risk in the Goods and the Food Delivery
+                        shall pass to you upon delivery.</p>
+                    <h5>o 5.7.</h5> 
+					<p>If you fail to accept delivery of Food
+                        Delivery and/or Goods at the time they are ready for
+                        delivery, or we are unable to deliver at the
+                        nominated time due to your failure to provide
+                        appropriate instructions, or authorizations, then
+                        such goods shall be deemed to have been delivered
+                        to you and all risk and responsibility in relation to
+                        such goods shall pass to you. Any storage,
+                        insurance and other costs which we incur as a result
+                        of the inability to deliver shall be your responsibility
+                        and you shall indemnify us in full for such cost.</p>
+                    <h5>o 5.8.</h5> 
+					<p>You must ensure that at the time of delivery
+                        of Food Delivery and/or Goods adequate
+                        arrangements, including access where necessary,
+                        are in place for the safe delivery of such goods. We
+                        cannot be held liable for any damage, cost or
+                        expense incurred to such goods or premises where
+                        this arises as a result of a failure to provide
+                        adequate access or arrangements for delivery.</p>
+                    <h5>o 5.9.</h5> 
+					<p>Participating kitchens, who will prepare your
+                        order, aim</p>
+
+                    <ol>
+					<li><h6> § 5.9.1. </h6>
+					<p>To deliver the product to you at the place of
+                        delivery requested by you in your order;</p>
+                    <h6>  § 5.9.2.</h6>
+						<p>To deliver within the time confirmed by the
+                        kitchen;</p>
+                    <h6> § 5.9.3.</h6> 
+					<p>To inform you if they expect that they are
+                        unable to meet the estimated delivery time.</p>
+						</li>
+						</ol>
+                    <h5>o 5.10.</h5>
+						<p>Participating Kitchens and we shall not be
+                        liable to you for any losses, liabilities, costs,
+                        damages, charges or expenses arising out of late
+                        delivery;</p>
+                    <h5> o 5.11.</h5>
+						<p>Please note that it might not be possible
+                        for Participating Kitchens to deliver to some
+                        locations. If this is the case, our Participating
+                        Kitchens or we will inform you using the contact
+                        details that you provide to us when you make your
+                        order and arrange for cancellation of the order or
+                        delivery to an alternative delivery address;
+                    </p>
+
+							</li>
+							<li>
+								<h4>Section 6: Cancellation</h4>
+						<h5> o 6.1. </h5>
+						<p>You must notify the participating kitchen
+                        immediately if you decide to cancel your order,
+                        preferably by phone, and quote your order number.
+                        If the kitchen accepts your cancellation, no
+                        cancellation fee applies. If the kitchen refuses
+                        cancellation, e.g. because preparation of Food
+                        Delivery has been completed and/or delivery
+                        personnel has already been dispatched, it may not
+                        be cancelled. We will not be able to refund any
+                        order, which has been already dispatched.</p>
+
+                    <h5> o 6.2.</h5>
+						<p>We may cancel a contract if the product is
+                        not available for any reason. We will notify you if this
+                        is the case and return any payment that you have
+                        made;</p>
+                    <h5> o 6.3. </h5>
+					<p>If the cancellation was made in time and
+                        once the kitchen has accepted your cancellation, we
+                        will refund or re-credit your debit or credit card with
+                        the full amount within 14 days, which includes the
+                        initial delivery charge (where applicable) which you
+                        paid for the delivery of the Goods or the Services,
+                        as applicable.
+						</p>
+                    <h5>  o 6.4.</h5> 
+					<p>In the unlikely event that the Participating
+                        Kitchen delivers a wrong item, you have the right to
+                        reject the delivery of the wrong item and you shall
+                        be fully refunded for the missing item. If the
+                        Participating Kitchen can only do a partial delivery
+                        (a few items might be not available), we will inform
+                        you or propose a replacement for missing items.
+                        You have the right to refuse a partial order before
+                        delivery and get a refund.
+                    </p>
+								
+							</li>
+							<li>
+								<h4>Section 7: Information</h4>
+								 <h5> o 7.1. </h5>
+								 <p>Where we have requested information from
+                        you to provide Food Delivery, Goods or Services
+                        you agree to provide us with accurate and complete
+                        information.</p>
+                    <h5>o 7.2.</h5>
+						<p>You authorize us to use, store or otherwise
+                        process your personal information in order to
+                        provide the Food Delivery, Goods or Services to you
+                        and for marketing and credit control purposes (the
+
+                        "Purpose"). The Purpose may include the disclosure
+                        of your personal information to selected third parties
+                        from time to time where we believe that the services
+                        offered by such third parties may be of interest to
+                        you or where this is required by law or in order to
+                        provide the Food Delivery, Goods or Service to you.
+                        More information can be found in our Privacy Policy.
+						</p>
+                    <h5>o 7.3.</h5> 
+					<p>You are entitled to request a copy of the
+                        personal information we hold on you. Please contact
+                        us if you wish to request this information.
+                    </p>
+							</li>
+							<li>
+								<h4>Section 8: Linked Sites</h4>
+								  <p>
+                        There may be a
+                        number of links on our Website to third party
+                        Websites which we believe may be of interest to
+                        you. We do not represent the quality of the Goods
+                        or Services provided by such third parties nor do we
+                        have any control over the content or availability of
+                        such sites. We cannot accept any responsibility for
+                        the content of third party Websites or the Services
+                        or Goods that they may provide to you.
+                    </p>
+							</li>
+							<li>
+								<h4>Section 9:</h4>
+								  <p>
+                        Complaints We take complaints
+                        very seriously and aim to respond to your
+                        complaints within 5 business days. All complaints
+                        should be addressed to <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="aad9dfdadac5d8deeacbdac4cbcecbc8c8cb84c3c484">[email&#160;protected]</a>
+                    </p>
+							</li>
+							<li>
+								<h4>Section 10: Limitation of Liability</h4>
+								 <h5>o 10.1.</h5>
+									<p>Great care has been taken to ensure that
+                        the information available on this Website is correct
+                        and error free. We apologize for any errors or
+                        omissions that may have occurred. We cannot
+                        warrant that use of the Website will be error free or
+
+                        fit for purpose, timely, that defects will be corrected,
+                        or that the site or the server that makes it available
+                        are free of viruses or bugs or represents the full
+                        functionality, accuracy, reliability of the Website and
+                        we do not make any warranty whatsoever, whether
+                        express or implied, relating to fitness for purpose, or
+                        accuracy.</p>
+                       <h5> o 10.2.</h5>
+						<p>By accepting these terms of use you agree
+                        to relieve us from any liability whatsoever arising
+                        from your use of information from any third party, or
+                        your use of any third party website, or your
+                        consumption of any food or beverages from a
+                        Participating Kitchen.</p>
+                    <h5> o 10.3.</h5>
+						<p>We disclaim any and all liability to you for
+                        the supply of the Food Delivery, Goods and
+                        Services to the fullest extent permissible under
+                        applicable law. This does not affect your statutory
+                        rights as a consumer. If we are found liable for any
+                        loss or damage to you such liability is limited to the
+                        amount you have paid for the relevant Goods or
+                        Services. We cannot accept any liability for any
+                        loss, damage or expense, including any direct or
+                        indirect loss such as loss of profits to you,
+                        howsoever arising. This limitation of liability does
+                        not apply to personal injury or death arising as a
+                        direct result of our negligence.</p>
+                    <h5> o 10.4.</h5> 
+					<p>We do not accept any liability for any
+                        delays, failures, errors or omissions or loss of
+                        transmitted information, viruses or other
+
+                        contamination or destructive properties transmitted
+                        to you or your computer system via our Website.</p>
+                    <h5> o 10.5.</h5> 
+					<p>We shall not be held liable for any failure
+                        or delay in performing Services or delivering Goods
+                        where such failure arises as a result of any act or
+                        omission, which is outside our reasonable control
+                        such as all overwhelming and unpreventable events
+                        caused directly and exclusively by forces of nature
+                        that can be neither anticipated, nor controlled, nor
+                        prevented by the exercise of prudence, diligence,
+                        and care, including but not limited to: war, riot, civil
+                        commotion; compliance with any law or
+                        governmental order, rule, regulation or direction and
+                        acts of third parties.</p>
+                    <h5>o 10.6.</h5>
+						<p>If we have contracted to provide identical
+                        or similar order to more than one Customer and are
+                        prevented from fully meeting our obligations to you
+                        by reason of an Event of Force Majeure, we may
+                        decide at our absolute discretion which orders we
+                        will fill and to what extent.</p>
+                    <h5>o 10.7.</h5> 
+					<p>The products sold by us are provided for
+                        private domestic and consumer use only.
+                        Accordingly, we do not accept liability for any
+                        indirect loss, consequential loss, loss of data, loss of
+                        income or profit, loss of damage to property and/or
+                        loss from claims of third parties arising out of the
+                        use of the Website or for any products or services
+                        purchased from us.</p>
+                    <h5>o 10.8.</h5> 
+					<p>We have taken all reasonable steps to
+                        prevent Internet fraud and ensure any data collected
+                        from you is stored as securely and safely as
+                        possible. However, we cannot be held liable in the
+                        extremely unlikely event of a breach in our secure
+                        computer servers or those of third parties.</p>
+                    <h5>o 10.9.</h5> 
+					<p>In the event apnadabba has a reasonable
+                        belief that there exists an abuse of vouchers and/or
+                        discount codes or in suspected instances of fraud,
+                        apnadabba may cause the shopper (or customer) to
+                        be blocked immediately and reserves the right to
+                        refuse future service. Additionally, should there exist
+                        an abuse of vouchers or discount codes,
+                        apnadabba reserves the right to seek compensation
+                        from any and all violators.</p>
+                    <h5> o 10.10.</h5>
+						<p>Offers are subject to apnadabba's
+                        discretion and may be withdrawn at any time and
+                        without notice.
+                    </p>
+								
+							</li>
+							<li>
+								<h4>Section 11: General</h4>
+								  <h5> o 11.1.</h5> 
+								  <p>All prices are in India Rupees. GST is
+                        included where indicated</p>
+                    <h5>o 11.2.</h5>
+						<p>We may subcontract any part or parts of
+                        the Services or Goods that we provide to you from
+                        time to time and we may assign or novate any part
+                        or parts of our rights under these Terms and
+                        Conditions without your consent or any requirement
+                        to notify you.</p>
+                    <h5> o 11.3.</h5>
+						<p>We may alter or vary the Terms and
+                        Conditions at any time without notice to you.</p>
+
+                    <h5>   o 11.4.</h5>
+						<p>Payment must be made either at the time
+                        of ordering the Food Delivery, Goods or Services
+                        from us by credit card or at the time of delivery by
+                        cash. Failure to pay on time will result in the
+                        cancellation of your order.</p>
+                    <h5> o 11.5.</h5>
+						<p>Do not use or launch any automated
+                        system or program in connection with our website or
+                        its online ordering functionality;</p>
+                    <h5> o 11.6.</h5>
+						<p>Do not collect or harvest any personally
+                        identifiable information from the website, use
+                        communication systems provided by the website for
+                        any commercial solicitation purposes, solicit for any
+                        reason whatsoever any users of the website with
+                        respect to their submissions to the website, or
+                        publish or distribute any vouchers or codes in
+                        connection with the website, or scrape or hack the
+                        website.</p>
+                    <h5> o 11.7.</h5>
+						<p>The Terms and Conditions together with
+                        the Privacy Policy, any order form and payment
+                        instructions constitute the entire agreement between
+                        you and us. No other terms whether expressed or
+                        implied shall form part of this Agreement. In the
+                        event of any conflict between these Terms and
+                        Conditions and any other term or provision on the
+                        Website, these Terms and Conditions shall prevail.</p>
+                    <h5> o 11.8.</h5> 
+					<p>If any term or condition of our Agreement
+                        shall be deemed invalid, illegal or unenforceable,
+                        the parties hereby agree that such term or condition
+                        shall be deemed to be deleted and the remainder of
+
+                        the Agreement shall continue in force without such
+                        term or condition.</p>
+                    <h5> o 11.9.</h5> 
+					<p>These Terms and Conditions and our
+                        Agreement shall be governed by and construed in
+                        accordance with the laws of India. The parties
+                        hereto submit to the exclusive jurisdiction of the
+                        courts of India.</p>
+                    <h5>  o 11.10.</h5>
+						<p>No delay or failure on our part to enforce
+                        our rights or remedies under the Agreement shall
+                        constitute a waiver on our part of such rights or
+                        remedies unless such waiver is confirmed in writing.</p>
+                    <h5> o 11.11.</h5>
+						<p>Customers placing order with apnadabba
+                        are liable of receiving promotional SMS, irrespective
+                        of their number being registered under NDNC. If
+                        customer wish to not receive promotional SMS, they
+                        may contact us on 
+						<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8feceefdeacfeeffe1eeebeeededeea1e6e1">[email&#160;protected]</a>
+						</p>
+					<h5> o 11.12.</h5>
+						<p>These Terms and Conditions and a
+                        contract (and all non-contractual obligations arising
+                        out of or connected to them) shall be governed and
+                        construed in accordance with India Laws. Both we
+                        and you hereby submit to the non-exclusive
+                        jurisdiction of the India Courts. All dealings,
+                        correspondence and contacts between us shall be
+                        made or conducted in the English language.</p>
+                    <h5>o 11.13.</h5>
+						<p>The voucher calculation is subject to
+                        apnadabba's discretion and may be altered at any
+                        time and without notice. The voucher can discount
+                        any/all of the components including food cost, taxes
+                        and fees and likewise.</p>
+
+                    <h5> o 11.14.</h5>
+						<p>Any Service Fee/Delivery Fee charged by
+                        apnadabba is subject to prevailing GST Rates.
+                    <h5> o 11.15.</h5> Rates under the GST regime has recently
+                        been notified. The kitchens are currently examining
+                        the taxability of their supplies. apnadabba hence,
+                        does not bear any responsibility on the taxes
+                        charged by the kitchen in the interim period.</p>
+								
+							</li>
+					
+					
+					
+					
+						</ul>
+					</div>
+			</div>
+		</div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+          <!-- <section> begin ============================-->
+      <section class="bg-dark py-0" data-zanim-timeline='{"delay":0}' data-zanim-trigger="scroll">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-auto d-none d-md-block mt-6 align-self-end"><img src="assets\img\food\pngfood2.png" alt="" width="95" data-zanim-xs='{"delay":0,"duration":2}'></div>
+            <div class="col-md col-lg-11 col-xl-9 my-6">
+              <div class="row">
+                <div class="col-md-5 col-lg-4 mb-6 mb-md-0 align-self-center"><img class="mb-1" src="assets\img\logo.png" alt="">
+                  <p class="text-white my-3 fs-1 mb-4">Launched on 27th September 2019, APNADABBA SERVICES is mainly in Azad nagar, balaganj, 
+				  lucknow (Utter Pradesh). We mainly focus on THALI online delivery services to door step, that make customers like bachelors, 
+				  students, officials, feel like home.</p>
+				  <p class="text-danger font-weight-bold">Follow us on</p>
+				   <a class="text-600 text-decoration-none mr-4" href="https://www.facebook.com/yourfoodyourdesire/"><span class="fab fa-facebook-f"></span></a>
+				   <a class="text-600 text-decoration-none mr-4" href="#!"><span class="fab fa-twitter"></span></a>
+				   <a class="text-600 text-decoration-none mr-4" href="#!"><span class="fab fa-pinterest"></span></a>
+				   <a class="text-600 text-decoration-none mr-4" href="#!"><span class="fab fa-vimeo"></span></a>
+				   <a class="text-600 text-decoration-none mr-4" href="#!"><span class="fab fa-behance"></span></a>
+				  
+                </div>
+                <div class="col-auto d-none d-lg-flex">
+                  <div class="border-left border-1000 my-5"></div>
+                </div>
+                <div class="col-6 col-md-4 ml-auto ml-lg-0">
+                   <h6 class="text-base fs-0 mb-4 font-weight-bold text-uppercase text-white">Delivery Hours</h6>
+                  <ul class="nav flex-column">
+                  <p class="text-danger font-weight-bold">Breakfast - Sunday-Monday</p>
+                  <p class="text-600">09:00 AM - 11:00 AM</p>
+                  <p class="text-danger font-weight-bold">Lunch - Sunday-Monday</p>
+                  <p class="text-600">01:00 PM - 2:30 PM</p>
+				  <p class="text-danger font-weight-bold">Dinner - Sunday-Monday</p>
+				  <p class="text-600">07:00 PM - 09:00 PM</p>
+                  
+                  </ul>
+                </div>
+                <div class="col-auto d-none d-lg-flex">
+                  <div class="border-left border-1000 my-5"></div>
+                </div>
+                <div class="col-6 col-md-3">
+                
+				   <h6 class="text-base fs-0 mb-4 font-weight-bold text-uppercase text-white">Contact us</h6>
+                  <ul class="nav flex-column">
+                    <li class="mb-2"><a class="text-600 text-decoration-none active" href="#!">Near Baraura Hussain Bari Lucknow,Uttar<br>Pradesh-226003</a></li>
+                    <li class="mb-2"><a class="text-600 text-decoration-none" href="#!">delivery@apnadabba<br>services.com</a></li>
+                    <li class="mb-2"><a class="text-600 text-decoration-none" href="#!">+917007441934</a></li>
+                   <p class="text-danger font-weight-bold">Online Payments by</p>
+				     
+                   <p> <img src="assets\img\pay_1.png" alt="" />
+				<img src="assets\img\pay_2.png" alt="" /> <img src="assets\img\pay_3.png" alt="" /></p>
+				 
+				  
+				  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="bg-black py-4 text-center">
+        <div class="container">
+          <p class="mb-0 font-weight-bold d-inline-block">Copyright © 2020 ApnaDabba<span class="text-primary fs-0">&nbsp;&hearts;</span> </p><a class="text-white ml-2" href="https://themewagon.com/">All rights reserved</a>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+    </main><!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="assets\js\jquery.min.js"></script>
+    <script src="assets\js\popper.min.js"></script>
+    <script src="assets\js\bootstrap.js"></script>
+    <script src="assets\js\plugins.js"></script>
+    <script src="assets\lib\is\is.min.js"></script>
+    <script src="assets\lib\stickyfilljs\stickyfill.min.js"></script>
+    <script src="assets\lib\sticky-kit\sticky-kit.min.js"></script>
+    <script src="assets\lib\loaders.css\loaders.css.js"></script><!-- Global site tag (gtag.js) - Google Analytics-->
+    <script src="assets\lib\fancybox\jquery.fancybox.min.js"></script>
+    <script src="assets\lib\owl-carousel\owl.carousel.min.js"></script>
+    <script src="assets\lib\fancy-tab\fancy-tab.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARdVcREeBK44lIWnv5-iPijKqvlSAVwbw&callback=initMap" async=""></script>
+    <script src="assets\lib\flexslider\jquery.flexslider-min.js"></script>
+    <script src="assets\js\theme.js"></script>
+	 <script src="assets\js\gallery.js"></script>
+   
+  </body>
+
+</html>
